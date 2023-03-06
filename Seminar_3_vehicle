@@ -13,7 +13,6 @@ public class Vehicle {
         public void addVehicleToDB(Vehicle vehicle) {
         }
     }
-    //2. Open-closed principle
     private double value;
 
     public void setValue(double value) {
@@ -30,13 +29,13 @@ public class Vehicle {
 }
 class Car extends Vehicle {
     public double calculateValue() {
-        return super.calculateValue() * 0.8;
+        return super.calculateValue() * 0.5;
     }
 }
 
 class Truck extends Vehicle {
     public double calculateValue() {
-        return super.calculateValue() * 0.9;
+        return super.calculateValue() * 0.7;
     }
 }
 
